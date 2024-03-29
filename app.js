@@ -61,7 +61,7 @@ app.delete("/todos/:id", (req, res) => {
 
 // run the server on port 3000
 // for example the app can run locally at this URL: http://localhost:3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
