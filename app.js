@@ -1,10 +1,13 @@
 // require dependencies so they can be used throughout this code
 const express = require("express");
 const bodyParser = require("body-parser");
+const cors = require('cors');
 
 // initialize Express.js server and save as a variable
 // so it can be referred to as `app`
 const app = express();
+
+app.use(cors());
 
 app.use(bodyParser.json());
 let todos = []; // In-memory storage for todos
